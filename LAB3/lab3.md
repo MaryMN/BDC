@@ -12,7 +12,7 @@ I created new database, named universitate with default properties.
 In the following images I created 5 tables.
 
 
-<img src="1.png"/> 
+<img src="1.PNG"/> 
 
 1. GRUPE
 

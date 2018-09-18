@@ -17,27 +17,27 @@ In the following images I created 5 tables.
 1. GRUPE
 
 
-<img src="2.png"/> 
+<img src="2.PNG"/> 
 
 2. DISCIPLINE
 
 
-<img src="3.png"/> 
+<img src="3.PNG"/> 
 
 3. STUDENTI
 
 
-<img src="4.png"/> 
+<img src="4.PNG"/> 
 
 4. PROFESORI
 
 
-<img src="5.png"/> 
+<img src="5.PNG"/> 
 
 5. STUDENTI_REUSITA
 
 In this image I created a database diagram 
-<img src ="7.png"/>
+<img src ="7.PNG"/>
 
 # Conclusion:
 After completing the required tasks i gathered basic knowledge of how to create a table and

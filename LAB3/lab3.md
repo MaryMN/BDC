@@ -39,6 +39,6 @@ In the following images I created 5 tables.
 In this image I created a database diagram 
 <img src ="7.png"/>
 
-#Conclusion:
+# Conclusion:
 After completing the required tasks i gathered basic knowledge of how to create a table and
 to input data into it.

@@ -1,14 +1,14 @@
 # Laborator 4
 
 
-# Interogarea nr8.
+## Interogarea nr8.
 ```
 Select distinct studenti.Id_Student, Nume_Student
 FROM studenti INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Student
 Where year(Data_Evaluare)=2018
 ```
 
-Obtineti identificatorii si numele studentilor, ale examenelor sustinute in anul 2018. 
+_*Obtineti identificatorii si numele studentilor, ale examenelor sustinute in anul 2018.*_
 
 <img src="8.PNG"/>
 

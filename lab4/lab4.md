@@ -15,6 +15,11 @@ Obtineti identificatorii si numele studentilor, ale examenelor sustinute in anul
 
 
 # Interogarea nr14
+    Select Nume_Student, Prenume_Student, Disciplina, Nota
+    FROM studenti 
+    INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Student
+    INNER JOIN discipline ON studenti_reusita.Id_Disciplina=discipline.Id_Disciplina
+    Where Nota>8
 
 Aflati numele si prenumele studentilor, precum si cursurile promovate cu note mai mari de 8 la
 examen. 

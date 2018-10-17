@@ -8,30 +8,36 @@ FROM studenti INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Stu
 Where year(Data_Evaluare)=2018
 ```
 
-_Obtineti identificatorii si numele *studentilor*, ale examenelor sustinute in anul 2018._
+_**Obtineti identificatorii si numele studentilor, ale examenelor sustinute in anul 2018.**_
 
 <img src="8.PNG"/>
 
 
 
-# Interogarea nr14
+### Interogarea nr14
     Select Nume_Student, Prenume_Student, Disciplina, Nota
     FROM studenti 
     INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Student
     INNER JOIN discipline ON studenti_reusita.Id_Disciplina=discipline.Id_Disciplina
     Where Nota>8
 
-Aflati numele si prenumele studentilor, precum si cursurile promovate cu note mai mari de 8 la
-examen. 
+_**Aflati numele si prenumele studentilor, precum si cursurile promovate cu note mai mari de 8 la
+examen.**_ 
 
 <img src="14.PNG"/>
 
 
 
-# Interogarea nr29
+### Interogarea nr29
 
-Determinati numele si prenumele studentilor, care au sustinut examene cu o nota mai mica decat
-oricare dintre notele studentilor cu identificatorul l 00.
+_*Determinati numele si prenumele studentilor, care au sustinut examene cu o nota mai mica decat
+oricare dintre notele studentilor cu identificatorul 1 00.**_
+
+Select distinct Nume_Student, Prenume_Student, Nota
+From studenti, studenti_reusita
+Where studenti.Id_Student=studenti_reusita.Id_Student and Nota < Any (select Nota 
+From studenti_reusita 
+where Id_Student=100)
 
 <img src="29.PNG"/>
 

@@ -32,13 +32,14 @@ examen.**_
 
 _**Determinati numele si prenumele studentilor, care au sustinut examene cu o nota mai mica decat
 oricare dintre notele studentilor cu identificatorul 1 00.**_
-`
+
+```
 Select distinct Nume_Student, Prenume_Student, Nota
 From studenti, studenti_reusita
 Where studenti.Id_Student=studenti_reusita.Id_Student and Nota < Any (select Nota 
 From studenti_reusita 
 where Id_Student=100)
-`
+```
 
 <img src="29.PNG"/>
 

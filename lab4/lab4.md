@@ -45,3 +45,18 @@ where Id_Student=100)
 
 
 
+### Interogarea nr35
+_**Găsiți denumirile disciplinelor și media notelor pe disciplină. Afișați numai disciplinile cu medii mai mari de 7,0**_
+
+`
+SELECT d.Disciplina, AVG(cast(s.Nota as float)) Media_Notelor 
+FROM discipline d
+	INNER JOIN studenti_reusita s on s.Id_Disciplina = d.Id_Disciplina
+GROUP BY Disciplina
+HAVING AVG(cast(s.Nota as float)) > 7
+`
+
+<img src="35.PNG"/>
+
+
+

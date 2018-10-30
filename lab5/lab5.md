@@ -1,6 +1,6 @@
 # Laboratory work nr.5 
 
-###### Completati urmatorul cod pentru a afisati cel mai mare numar dintre cele trei numere prezentate: 
+_**Completati urmatorul cod pentru a afisati cel mai mare numar dintre cele trei numere prezentate:**_ 
 
-<src img="../1.PNG"/>
+<src img="images/1.PNG"/>
 

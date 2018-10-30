@@ -24,7 +24,7 @@ _**Rezolvati aceesi sarcina, 1, apeland la structura selectiva CASE**_
 
 
 _**Modificati exercitiile din sarcinile 1 si 2 pentru a include procesarea erorilor cu TRY si CATCH, si
-RAISERRROR. **_
+RAISERRROR.**_
 
 *With TRY & CATCH instruction*
 

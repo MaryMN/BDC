@@ -2,13 +2,13 @@
 
 
 1. _Sa se scrie o instructiune T-SQL, care ar popula co Joana Adresa _ Postala _ Profesor din tabelul profesori cu valoarea 'mun. Chisinau', unde adresa este necunoscuta_
-     
+ `    
 select *
 from profesori
 update profesori
 set Adresa_Postala_Profesor = 'mun.Chisinau'
 where Adresa_Postala_Profesor is null;
-    
+  `  
 
 ![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/1.PNG)
 

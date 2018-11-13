@@ -55,19 +55,33 @@ c) Sa se insereze toate datele din tabelul profesori in tabelul profesori_new. S
 acest scop, un numar potrivit de instructiuni T-SQL. Datele trebuie sa fie transferate in
 felul urmator:
 Coloana-sursa   |Coloana-destinatie
+
 ----------------|--------------------
+
 Id_Profesor     |Id_Profesor
+
 ----------------|--------------------
+
 Nume_Profesor   |Nume_Profesor
+
 ----------------|--------------------
+
 Prenume_Profesor|Prenume_Profesor
+
 ----------------|--------------------
+
 Adresa_Postala  |Profesor_Localitate
+
 ----------------|--------------------
+
 Adresa_Postala  |Profesor_Adresa 1
+
 ----------------|--------------------
+
 Adresa_Pastala  |Profesor_Adresa 2
+
 ----------------|--------------------
+
 In coloana Localitate sa fie inserata doar informatia despre denumirea localitatii din
 coloana-sursa Adresa_Postala_Profesor. in coloana Adresa_l, doar denumirea strazii. In
 coloanaAdresa_2, sa se pastreze numarul casei si (posibil) al apartamentului.**

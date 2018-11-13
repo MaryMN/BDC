@@ -25,7 +25,7 @@ where Adresa_Postala_Profesor is null;
 
 3. *La tabelul grupe, sa se adauge 2 coloane noi Sef_grupa si Prof_Indrumator, ambele de tip INT. Si se populeze campurile nou-create cu cele mai potrivite candidaturi ill baza criteriilor de maijos: 
 
-a) $eful grupei trebuie sa aiba cea mai buna reuitii (medie) din grupa la toate formele de evaluare si la toate disciplinele. Un student nu poate fi ~ef de grupa la mai multe grupe. 
+a) Seful grupei trebuie sa aiba cea mai buna reuitii (medie) din grupa la toate formele de evaluare si la toate disciplinele. Un student nu poate fi sef de grupa la mai multe grupe. 
 
 b) Profesorul fndrumator trebuie sa predea un numiir maximal posibil de discipline la grupa data. Daca nu existii o singurii candidaturii, care corespunde primei cerinte, atunci este ales din grupul de candidati acel cu identificatorul (Id_Profesor) minimal. Un profesor nu poate fi illdrumator la mai multe grupe. 
 
@@ -42,4 +42,66 @@ c) Sii se scrie instructiunile ALTER, SELECT, UPDATE necesare pentru crearea col
 4. *Sa se scrie o instructiune T-SQL, care ar mari toate notele de evaluare ~efilor de grupe cu un punct. Nota maximala (10) nu poate fi marita.*
 
 ![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/4.PNG)
+
 ![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/4.1.PNG)
+
+
+5. **Sa se creeze un tabel profesori_new, care include urmatoarele coloane: Id_Profesor,
+Nume _ Profesor, Prenume _ Profesor, Localitate, Adresa _ 1, Adresa _ 2.
+a) Coloana Id_Profesor trebuie sa fie definita drept cheie primara si, in baza ei, sa fie
+construit un index CLUSTERED.
+b) Campul Localitate trebuie sa posede proprietatea DEFAULT= 'mun. Chisinau'.
+c) Sa se insereze toate datele din tabelul profesori in tabelul profesori_new. Sa se scrie, cu
+acest scop, un numar potrivit de instructiuni T-SQL. Datele trebuie sa fie transferate in
+felul urmator:
+Coloana-sursa   |Coloana-destinatie
+----------------|--------------------
+Id_Profesor     |Id_Profesor
+----------------|--------------------
+Nume_Profesor   |Nume_Profesor
+----------------|--------------------
+Prenume_Profesor|Prenume_Profesor
+----------------|--------------------
+Adresa_Postala  |Profesor_Localitate
+----------------|--------------------
+Adresa_Postala  |Profesor_Adresa 1
+----------------|--------------------
+Adresa_Pastala  |Profesor_Adresa 2
+----------------|--------------------
+In coloana Localitate sa fie inserata doar informatia despre denumirea localitatii din
+coloana-sursa Adresa_Postala_Profesor. in coloana Adresa_l, doar denumirea strazii. In
+coloanaAdresa_2, sa se pastreze numarul casei si (posibil) al apartamentului.**
+
+![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/5.PNG)
+
+![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/5.1.PNG)
+
+![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/5.2.PNG)
+
+
+6.*Să se insereze datele in tabelul orarul pentru Grupa= 'CIBJ 71' (Id_ Grupa= 1) pentru ziua de luni. 
+Toate lectiile vor avea loc în blocul de studii 'B'. Mai jos, sunt prezentate detaliile de inserare:
+(ld_Disciplina = 107, Id_Profesor= 101, Ora ='08:00', Auditoriu = 202);
+(Id_Disciplina = 108, Id_Profesor= 101, Ora ='11:30', Auditoriu = 501);
+(ld_Disciplina = 119, Id_Profesor= 117, Ora ='13:00', Auditoriu = 501);*
+
+![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/6.PNG)
+
+
+7. *Sa se scrie expresiile T-SQL necesare pentru a popula tabelul orarul pentru grupa INF171 , ziua de luni. 
+Datele necesare pentru inserare trebuie sa fie colectate cu ajutorul instructiunii/instructiunilor SELECT si 
+introduse in tabelul-destinatie, stiind ca: 
+lectie #1 (Ora ='08:00', Disciplina = 'Structuri de date si algoritmi', Profesor ='Bivol Ion')
+lectie #2 (Ora ='11 :30', Disciplina = 'Programe aplicative', Profesor ='Mircea Sorin')
+lectie #3 (Ora ='13:00', Disciplina ='Baze de date', Profesor = 'Micu Elena')*
+
+![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/7.PNG)
+
+
+8. *Sa se scrie interogarile de creare a indecsilor asupra tabelelor din baza de date universitatea pentru a asigura 
+o performanta sporita la executarea interogarilor SELECT din Lucrarea practica 4. 
+Rezultatele optimizarii sa fie analizate in baza planurilor de executie, pana la si dupa crearea indecsilor. 
+Indecsii nou-creati sa fie plasati fizic in grupul de fisiere userdatafgroupl 
+(Crearea si intrefinerea bazei de date - sectiunea 2.2.2)*
+
+![GitHub Logo](https://github.com/MaryMN/BDC/blob/master/lab6/photo/8.PNG)

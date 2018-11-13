@@ -58,27 +58,27 @@ Coloana-sursa   |Coloana-destinatie
 
 ----------------|--------------------
 
-Id_Profesor     |Id_Profesor
+-----Id_Profesor|Id_Profesor---------
 
 ----------------|--------------------
 
-Nume_Profesor   |Nume_Profesor
+---Nume_Profesor|Nume_Profesor-------
 
 ----------------|--------------------
 
-Prenume_Profesor|Prenume_Profesor
+Prenume_Profesor|Prenume_Profesor----
 
 ----------------|--------------------
 
-Adresa_Postala  |Profesor_Localitate
+--Adresa_Postala|Profesor_Localitate-
 
 ----------------|--------------------
 
-Adresa_Postala  |Profesor_Adresa 1
+--Adresa_Postala|Profesor_Adresa 1--
 
 ----------------|--------------------
 
-Adresa_Pastala  |Profesor_Adresa 2
+--Adresa_Pastala|Profesor_Adresa 2--
 
 ----------------|--------------------
 

@@ -115,3 +115,40 @@ WHERE Id_Profesor = (Select Id_profesor
  END
 
  --
+												       /*ex5*/
+ /*ex6*/
+ /*ex7.Sa se scrie functia care ar calcula varsta studentului. Sa se defineasca urmatorul format al functiei: <nume_functie>(<Data_Nastere_Student>).*/
+ DROP Function IF EXISTS datanastere
+GO
+
+Create Function datanastere 
+(@data_nastere DATE) 
+RETURNS Int
+ BEGIN
+ DECLARE @varsta Int
+ Select @varsta = (Select (YEAR(GETDATE()) - YEAR(@data_nastere) - CASE 
+ 						WHEN (MONTH(@data_nastere) > MONTH(GETDATE())) OR 
+						(MONTH(@data_nastere) = MONTH(GETDATE()) AND  
+						DAY(@data_nastere)> DAY(GETDATE()))
+						THEN  1
+						ELSE  0
+						END))
+ RETURN @varsta
+ END
+
+ --
+ select datanastere ('1998-01-01') as varsta
+
+ /*ex8. Sa se creeze o functie definita de utilizator, care ar returna datele referitoare la reusita unui student. Se defineste urmatorul format al functiei : < nume_functie > (<Nume_Prenume_Student>). Sa fie afisat tabelul cu urmatoarele campuri: Nume_Prenume_Student, Disticplina, Nota, Data_Evaluare.*/
+ DROP FUNCTION IF EXISTS reusita
+GO
+
+CREATE FUNCTION reusita (@NP_St VARCHAR(50))
+RETURNS TABLE 
+AS
+RETURN
+(Select Nume_Student + ' ' + Prenume_Student as Student, Disciplina, Nota, Data_Evaluare
+ From studenti.studenti inner join studenti.studenti_reusita on 
+ studenti.studenti.Id_Student=studenti.studenti_reusita.Id_Student inner join 
+ plan_studii.discipline on studenti.studenti_reusita.Id_Disciplina=plan_studii.discipline.Id_Disciplina 
+ Where Nume_Student + ' ' + Prenume_Student = @NP_St )

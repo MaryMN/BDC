@@ -3,10 +3,18 @@
 _**1.Sa se creeze proceduri stocate in baza exercitiilor (2 exercitii) din capitolul 4. Parametrii de
 intrare trebuie sa corespunda criteriilor din clauzele WHERE ale exercitiilor respective .**_
 
+![Git](https://github.com/MaryMN/BDC/blob/master/lab9/images/1.PNG)
+
+![Git](https://github.com/MaryMN/BDC/blob/master/lab9/images/1.1.PNG)
+
 
 _**2. Sa se creeze o procedura stocata, care nu are niciun parametru de intrare ~i poseda un
 parametru de ie~ire. Parametrul de ie~ire trebuie sa returneze numarul de studenti, care nu au
 sustinut eel putin o forma de evaluare (nota mai mica de 5 sau valoare NULL).**_
+
+![Git](https://github.com/MaryMN/BDC/blob/master/lab9/images/2.PNG)
+
+![Git](https://github.com/MaryMN/BDC/blob/master/lab9/images/2.1.PNG)
 
 
 _**3. Sa se creeze o procedura stocata, care ar insera in baza de date informatii despre un student
@@ -21,6 +29,7 @@ de intrare: numele ~i prenumele profesorului vechi, numele ~i prenumele profesor
 disciplina. in cazul in care datele inserate sunt incorecte sau incomplete, sa se afi~eze un
 mesaj de avertizare.**_
 
+![Git](https://github.com/MaryMN/BDC/blob/master/lab9/images/4.PNG)
 
 _**5. Sa se creeze o procedura stocata care ar forma o lista cu primii 3 cei mai buni studenti la o
 disciplina, ~i acestor studenti sa le fie marita nota la examenul final cu un punct (nota

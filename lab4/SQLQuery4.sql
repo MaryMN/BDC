@@ -1,13 +1,15 @@
+--8.Obtineti identificatorii si numele studentilor, ale examenelor sustinute in anul 2018.
 Select distinct studenti.Id_Student, Nume_Student
 FROM studenti INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Student
 Where year(Data_Evaluare)=2018
-
+--14.Aflati numele si prenumele studentilor, precum si cursurile promovate cu note mai mari de 8 la examen.
 Select Nume_Student, Prenume_Student, Disciplina, Nota
 FROM studenti 
 INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Student
 INNER JOIN discipline ON studenti_reusita.Id_Disciplina=discipline.Id_Disciplina
 Where Nota>8
-
+--nr29
+--Determinati numele si prenumele studentilor, care au sustinut examene cu o nota mai mica decat oricare dintre notele studentilor cu identificatorul 1 00.
 Select Nume_Student, Prenume_Student, Nota
 FROM studenti
 INNER JOIN studenti_reusita ON studenti.Id_Student=studenti.Id_Student
@@ -19,7 +21,8 @@ From studenti, studenti_reusita
 Where studenti.Id_Student=studenti_reusita.Id_Student and Nota < Any (select Nota 
 From studenti_reusita 
 where Id_Student=100)
-
+--nr35
+--Găsiți denumirile disciplinelor și media notelor pe disciplină. Afișați numai disciplinile cu medii mai mari de 7,0
 
 Select distinct S.Nume_Student, S.Prenume_Student,  S.Adresa_Postala_Student as Oras_resedinta,
 P.Nume_Profesor, P.Prenume_Profesor, P.Adresa_Postala_Profesor as Oras_Resedinta, COUNT(*)

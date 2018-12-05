@@ -34,7 +34,7 @@ lectiei (Ora), sala unde are loc lectia (Auditoriu)**_
 
 
 
-``` 
+``` sql
 CREATE TABLE orarul( Id_Disciplina int NOT NULL,
                        Id_Profesor int NOT NULL, 
 					   Id_Grupa smallint NOT NULL,

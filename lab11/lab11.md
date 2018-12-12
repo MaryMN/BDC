@@ -67,12 +67,14 @@ WITH MOVE 'universitatea' TO 'D:\mysqp\MSSQL14.MSSQLSERVER\MSSQL\DATA\data.mdf',
 MOVE 'universitatea_log' TO 'D:\mysqp\MSSQL14.MSSQLSERVER\MSSQL\DATA\log.ldf',
 NORECOVERY
 GO
-RESTORE LOG universitatea_lab11
-FROM DISK = 'D:\mysqp\MSSQL14.MSSQLSERVER\MSSQL\DATA\Backup_lab11\exercitiul3.bkp'
-WITH NORECOVERY
-GO
 RESTORE DATABASE universitatea_lab11
 FROM DISK = 'D:\mysqp\MSSQL14.MSSQLSERVER\MSSQL\DATA\Backup_lab11\exercitiul2.bkp'
 WITH NORECOVERY
 GO
+RESTORE LOG universitatea_lab11
+FROM DISK = 'D:\mysqp\MSSQL14.MSSQLSERVER\MSSQL\DATA\Backup_lab11\exercitiul3.bkp'
+WITH NORECOVERY
+GO
+
 ```
+![Images](https://github.com/MaryMN/BDC/blob/master/lab11/images/4.PNG)
